@@ -2,9 +2,4 @@ pipeline:
   - name: test
     type: command
     command: echo foo
-service:
-  type: github
-  token: $WALTER_GITHUB_TOKEN
-  repo: walter-test
-  from: mizzy
-  update: .walter
+
