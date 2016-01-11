@@ -2,4 +2,9 @@ pipeline:
   - name: test
     type: command
     command: echo foo
-
+  - name: parallel
+    parallel:
+      - name: echo bar
+        command: echo bar
+      - name: echo baz
+        command: echo baz
