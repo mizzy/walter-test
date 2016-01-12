@@ -8,3 +8,10 @@ pipeline:
         command: echo bar
       - name: echo baz
         command: echo baz
+service:
+  type: github
+  token: $WALTER_GITHUB_TOKEN
+  repo: walter-test
+  from: mizzy
+  update: .walter
+
