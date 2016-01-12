@@ -1,13 +1,13 @@
 pipeline:
   - name: test
     type: command
-    command: echo foo
+    command: echo foo && sleep 10
   - name: parallel
     parallel:
       - name: echo bar
-        command: echo bar
+        command: echo bar && sleep 3
       - name: echo baz
-        command: echo baz
+        command: echo baz && sleep 5
 service:
   type: github
   token: $WALTER_GITHUB_TOKEN
