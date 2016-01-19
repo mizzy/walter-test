@@ -7,7 +7,7 @@ pipeline:
       - name: echo bar
         command: echo bar
       - name: echo baz
-        command: echo baz
+        command: echo bazzzzzzzz
 service:
   type: github
   token: $WALTER_GITHUB_TOKEN
