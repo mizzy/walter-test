@@ -12,3 +12,9 @@ service:
   type: github
   token: $WALTER_GITHUB_TOKEN
 
+messenger:
+  type: slack
+  channel: random
+  url: $SLACK_WEBHOOK_URL
+  icon_url: https://raw.githubusercontent.com/serverspec/serverspec-integration-test/master/walter.png
+  username: Walter
