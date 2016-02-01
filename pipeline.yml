@@ -1,7 +1,7 @@
 pipeline:
   - name: test
     type: command
-    command: echo foo && sleep 1
+    command: echo foo && echo foo && echo foo && echo foo && sleep 1
   - name: parallel
     parallel:
       - name: echo bar
