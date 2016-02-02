@@ -6,8 +6,8 @@ pipeline:
     parallel:
       - name: echo bar
         command: echo bar && sleep 2
-      - name: echo baz
-        command: echo baz && sleep 3
+      - name: fail 
+        command: ls aaaaaa
 service:
   type: github
   token: $WALTER_GITHUB_TOKEN
