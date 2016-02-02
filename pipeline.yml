@@ -1,4 +1,6 @@
 pipeline:
+  - name: aaaa
+    command: aaaaa
   - name: test
     type: command
     command: echo foo && echo foo && echo foo && echo foo && sleep 1
