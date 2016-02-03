@@ -5,7 +5,7 @@ pipeline:
   - name: parallel
     parallel:
       - name: echo bar
-        command: echo bar && sleep 2
+        command: echo bar && sleep 30
       - name: echo baz
         command: echo baz
       - name: echo aaaaa
