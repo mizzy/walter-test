@@ -1,6 +1,4 @@
 pipeline:
-  - name: aaaa
-    command: aaaaa
   - name: test
     type: command
     command: echo foo && echo foo && echo foo && echo foo && sleep 1
@@ -8,8 +6,8 @@ pipeline:
     parallel:
       - name: echo bar
         command: echo bar && sleep 2
-      - name: fail 
-        command: ls aaaaaa
+      - name: echo baz
+        command: echo baz
 service:
   type: github
   token: $WALTER_GITHUB_TOKEN
