@@ -20,6 +20,4 @@ messenger:
   url: $SLACK_WEBHOOK_URL
   icon_url: https://raw.githubusercontent.com/serverspec/serverspec-integration-test/master/walter.png
   username: Walter
-  suppress:
-    - result
-    
+
