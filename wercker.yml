@@ -1,9 +1,0 @@
-box: wercker/ruby
-services:
-    - mies/rethinkdb
-build:
-    steps:
-        - script:
-            name: middleman build
-            code: echo foo
-            
