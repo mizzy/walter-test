@@ -8,6 +8,8 @@ pipeline:
         command: echo bar && sleep 2
       - name: echo baz
         command: echo baz
+  - name: echo aaaaa
+    command: echo fffff
 service:
   type: github
   token: $WALTER_GITHUB_TOKEN
